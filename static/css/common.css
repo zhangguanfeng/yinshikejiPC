@@ -1,0 +1,16 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.fix::after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.fix {
+  zoom: 1;
+}
