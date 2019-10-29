@@ -28,8 +28,7 @@
       <div class="title_jieshao_text">
         <h3>界面效果</h3>
         <div class="title_jieshao_text_box">
-          <el-row type="flex" class="row-bg" >
-            <el-col>
+          
               <div class="title_jieshao_text_box_1 ">
                 <div class="title_jieshao_text_box_1_img">
                   <div class="img">
@@ -43,8 +42,7 @@
                   </ul>
                 </div>
               </div>
-            </el-col>
-            <el-col>
+            
               <div class="title_jieshao_text_box_1">
                 <div class="title_jieshao_text_box_1_img">
                   <div class="img">
@@ -59,8 +57,7 @@
                   </ul>
                 </div>
               </div>
-            </el-col>
-            <el-col>
+            
               <div class="title_jieshao_text_box_1">
                 <div class="title_jieshao_text_box_1_img">
                   <div class="img">
@@ -74,8 +71,7 @@
                   </ul>
                 </div>
               </div>
-            </el-col>
-          </el-row>
+           
         </div>
       </div>
     </div>
@@ -83,21 +79,19 @@
     <div class="solve">
       <h3>解决方案</h3>
       <div class="solve_box_list">
-        <el-row type="flex" class="row-bg" >
-          <el-col >
+        
             <div class="solve_box">
               <div class="solve_box_img">
                 <img src="/static/img/shouye2.jpg" alt="">
               </div>
               <div class="solve_box_text">
                 <h4>星级酒店</h4>
-                <h4>IPTV电视系统解决方案</h4>
+                <h4>IP网络酒店前端解决方案</h4>
                 <p>为商用电视系统研发的高集成度、高性价比IPTV系统。</p>
                 <a href="#">--查看更多</a>
               </div>
             </div>
-          </el-col>
-          <el-col>
+          
             <div class="solve_box">
               <div class="solve_box_img">
                 <img src="/static/img/shouye3.jpg" alt="">
@@ -109,8 +103,7 @@
                 <a href="#">--查看更多</a>
               </div>
             </div>
-          </el-col>
-          <el-col>
+          
             <div class="solve_box">
               <div class="solve_box_img">
                 <img src="/static/img/shouye4.jpg" alt="">
@@ -122,8 +115,7 @@
                 <a href="#">--查看更多</a>
               </div>
             </div>
-          </el-col>
-        </el-row>
+          
       </div>
     </div>
     <div class="into">
@@ -171,147 +163,6 @@
       </div>
     </div>
   </div>
-
-<!-- 旧的 -->
-  <!-- <div class="swipeDiv">
-    <el-carousel indicator-position="none" height="600px">
-      <el-carousel-item>
-        <el-row :gutter="24">
-          <el-col :span="4">
-            <div class="grid-content bg-purple"></div>
-          </el-col>
-          <el-col :span="10"><img style="margin-top:50px" src="static/img/cenImg1.png"></el-col>
-          <el-col :span="8">
-            <div style="text-align:left;margin-top:130px">
-              <h1 style="font-size: 30px; color:#ffffff">引视商用系统桌面</h1>
-              <p style="font-size: 16px;margin-top:20px;color:#ffffff">基于酒店环境的客制化直播点播解决方案，部署简单对硬件要求低，真正适合酒店场景需求的IPTV系统
-              </p>
-              <el-row :gutter="24" style="margin-top:20px">
-                <el-col :span="13">
-                  <div class="grid-content bg-purple">
-                    <li>完美支持连锁酒店多店云部署</li>
-                  </div>
-                </el-col>
-                <el-col :span="11">
-                  <div class="grid-content bg-purple">
-                    <li>支持界面多皮肤切换</li>
-                  </div>
-                </el-col>
-              </el-row>
-              <el-row :gutter="24">
-                <el-col :span="13">
-                  <div class="grid-content bg-purple">
-                    <li>机顶盒内置客控无线AP功能</li>
-                  </div>
-                </el-col>
-                <el-col :span="11">
-                  <div class="grid-content bg-purple">
-                    <li>提供酒店专属云桌面</li>
-                  </div>
-                </el-col>
-              </el-row>
-              <el-row :gutter="24">
-                <el-col :span="13">
-                  <div class="grid-content bg-purple">
-                    <li>唯一支持多国语言切换功能</li>
-                  </div>
-                </el-col>
-                <el-col :span="11">
-                  <div class="grid-content bg-purple">
-                    <li>客房自定义配置高</li>
-                  </div>
-                </el-col>
-              </el-row>
-
-              <div class="box1BotMore">
-                <router-link to="/products">了解详情 <img src="static/img/box1BotMore2.png" class="showsIn"></router-link>
-              </div>
-            </div>
-
-
-          </el-col>
-        </el-row>
-
-
-      </el-carousel-item>
-
-     
-    </el-carousel>
-    
-
-    <h1 style="margin-top:30px">引视 Android客户端至今启动量2,563,886次</h1>
-    <div class="pvd-video">
-      <div class="pvd-v">
-        <video class="povode-xc" controls="" width="100%" height="100%" src="static/video/ad.mp4"></video>
-        
-      </div>
-    </div>
-    <div class="solveBg">
-     
-      <div class="title text-center">
-        <h2>成功案例&amp;解决方案</h2>
-        <div class="titleBrief ">
-          <p>多年来引视已成功为数百家ISP电信企业、酒店、小区提供完的直播点播、网络机房、认证计费、缓存加速解决方案，经多年稳定运行的验证，深受客户好评。</p>
-        </div>
-
-      </div>
-
-      <div id="mainwrapper">
-        <div id="box-2" class="box">
-          <img id="image-2" src="static/img/box2Img2.jpg" width="360" height="290" />
-          <span class="caption full-caption">
-            <h2>酒店IPTV解决方案</h2>
-            <p><a>1.50房间老酒店改造方案（实例）</a></p>
-            <p><a>2.200房间老酒店改造方案（实例）</a></p>
-          </span>
-        </div>
-        <div id="box-2" class="box">
-          <img id="image-2" src="static/img/box2Img3.jpg" width="360" height="290" />
-          <span class="caption full-caption">
-            <h2>成功案例</h2>
-            
-          </span>
-        </div>
-        <div class="clearFloat">
-        </div>
-      </div>
-      <div style="height:80px"></div>
-    </div>
-
-    <div class="pvd-superiority">
-      <div class="w1290">
-        <h4>酒店行业最具潜力供应商之一</h4>
-        <div class="sup-right">
-          <ul class="clearfloat2">
-            <li class="item_block">
-              <p class="title">新趋势</p>
-              <p>星星之火已显燎原之势，融合通信逐 <br>渐成为行业主流</p>
-            </li>
-            <li class="item_block">
-              <p class="title">技术领先</p>
-              <p>专注研发，积累6项专利与著作权</p>
-            </li>
-            <li class="item_block">
-              <p class="title">完善服务</p>
-              <p>一整套系统方案完整打包，满足各种情况需求</p>
-            </li>
-            <li class="item_block">
-              <p class="title">降低成本</p>
-              <p>大幅降低线缆、设备、施工、维护成本</p>
-            </li>
-            <li class="item_block">
-              <p class="title">智能体验</p>
-              <p>电视、电话、无线、客控联动的智能化体验</p>
-            </li>
-            <li class="item_block">
-              <p class="title">全国响应</p>
-              <p>全国范围招收代理商，共创未来</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <script>
@@ -377,8 +228,12 @@
 
         .title_jieshao_text_box {
           box-sizing: border-box;
-          padding-left: 165px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0 120px;
           .title_jieshao_text_box_1 {
+            // margin: 0 auto
             padding: 11px;
             width: 425px;
             // height: 455px;
@@ -440,7 +295,6 @@
     // 解决方案
     .solve {
       height: 790px;
-
       h3 {
         height: 113px;
         line-height: 113px;
@@ -448,9 +302,10 @@
 
       .solve_box_list {
         box-sizing: border-box;
-        // padding: 0 165px;
-        padding-left: 165px;
-
+        padding: 0 120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         .solve_box {
           &:hover {
             box-shadow: 0px 0px 20px #ccc;

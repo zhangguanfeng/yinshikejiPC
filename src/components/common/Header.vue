@@ -32,13 +32,13 @@
         v-for="(item,index) in navItems" :key="index">
         <router-link :to="item.link">{{item.text}}</router-link>
         
-        <div class="title_name_two" v-for="(item2,index2) in item.children" :key="index2" v-show="index == isShow">
-          <router-link :to="item2.link">{{item2.text}}</router-link>
+        <div class="title_name_two"  v-show="index == isShow">
+          <router-link :to="item2.link" v-for="(item2,index2) in item.children" :key="index2">{{item2.text}}</router-link>
         </div>
       </div>
-      <div class="title_name" @mouseover="handleChangShow()" @mouseleave="handleHidden()">
+      <!-- <div class="title_name" @mouseover="handleChangShow()" @mouseleave="handleHidden()">
         <a href="http://cloud.nhw6.com:8086/discuz/" target="_blank">官网论坛</a>
-      </div>
+      </div> -->
       <div class="title_name" @mouseover="handleChangShow()" @mouseleave="handleHidden()">
         <a href="http://cloud.iptv9.cn" target="_blank">云平台</a>
       </div>
@@ -55,30 +55,37 @@
     data() {
       return {
         input: null,
-        isShow: 0,
+        isShow: -1,
         navItems: [{
             text: '首页',
             link: '/index'
-          }, {
+          },
+          {
             text: '产品中心',
-            link: '/products',
+            link: '/products'
+          },
+          {
+            text: '解决方案',
+            link: '/solution',
             children: [{
-                text: '解决方案',
-                link: '/solution'
+                text: '软件下载',
+                link: '/download'
               },
               {
                 text: '教程中心',
                 link: '/tutorial'
               }
             ]
-          }, {
-            text: '软件下载',
-            link: '/download'
-          }, {
+          },
+          {
+            text: '新闻中心',
+            link: '/products'
+          },
+           {
             text: '公司动态',
             link: '/company',
             children: [{
-              text: '关于我们',
+              text: '关于引视',
               link: '/about'
             }, ]
           },
@@ -132,7 +139,6 @@
       top: 70px;
       left: 0px;
       z-index: 9;
-      border-top: 2px solid rgb(146, 203, 230);
       background: #fff;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 
