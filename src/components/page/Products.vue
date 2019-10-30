@@ -63,7 +63,9 @@
               </dl>
             </div>
             <div class="advantage_6 f_r wow bounceInRight animated"
-              style="visibility: visible; animation-name: bounceInRight;"></div>
+              style="visibility: visible; animation-name: bounceInRight;">
+              <img src="/static/img/bg_iptv.png" alt="">
+              </div>
           </div>
 
         </div>
@@ -176,7 +178,7 @@
     display: none;
   }
 
-  .img-responsive,
+  .img-responsive
     {
     display: block;
     max-width: 100%;
@@ -200,6 +202,7 @@
 
   .container {
     width: 1230px;
+    min-width: 1460px;
   }
 
   .container {
@@ -216,7 +219,7 @@
   .content_x {
     width: 100%;
     height: auto;
-    padding: 4em 0;
+    /* padding: 4em 0; */
     border-bottom: 1px #e6be19 dotted;
   }
 
@@ -229,7 +232,7 @@
     width: 47%;
     height: auto;
     min-height: 360px;
-    background: url("/static/img/bg_iptv.png") no-repeat right top;
+    /* background: url("/static/img/bg_iptv.png") no-repeat right top; */
   }
 
   .advantage_1 {
