@@ -53,13 +53,13 @@
                   <p>7、内置商城模块，支持传统的当面付。</p>
                   <p>8、支持多店集中管理和云部署。</p>
                 </dd>
-                <div align="center">
+                <dd class="liaojie" align="center"><router-link to="/iptv"><button type="button "
+                      class="btn btn-primary">了解详情</button></router-link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dd>
+                <!-- <div align="center">
                   <router-link to="/iptv"><button type="button "
                       class="btn btn-primary">了解详情</button></router-link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <!-- <a target="_blank"
-                    href="http://wpa.qq.com/msgrd?v=3&amp;uin=1125888050&amp;site=qq&amp;menu=yes"><button
-                      type="button " class="btn btn-success">购买咨询</button></a> -->
-                </div>
+                  
+                </div> -->
               </dl>
             </div>
             <div class="advantage_6 f_r wow bounceInRight animated"
@@ -134,6 +134,9 @@
 </script>
 
 <style scoped>
+.liaojie{
+  margin: 40px 0;
+}
   .swipeDiv {
 
     /* position: absolute;
