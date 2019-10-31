@@ -6,13 +6,13 @@
     <!-- 内容部分 -->
     <div class="content">
       <!-- 悬浮框 -->
-      <!-- <div class="xuanfu">
+      <div class="xuanfu">
         <div class="but">
           <a class="but_qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=728191908&site=qq&menu=yes">免费咨询</a>
         </div>
-      </div> -->
+      </div>
       <!-- 弹窗 -->
-      <!-- <transition name="el-fade-in-linear">
+      <transition name="el-fade-in-linear">
         <div class="dialog" v-show="isShow" >
           <div class="dialog_box">
             <button  class="dialog_hidden" @click="handleDialogHidden">取消</button>
@@ -20,7 +20,7 @@
             <a class="zixun" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=728191908&site=qq&menu=yes">咨询咨询</a>
           </div>
         </div>
-      </transition> -->
+      </transition>
       
       <transition
         name="fade"
@@ -80,7 +80,7 @@ export default {
     showDialog(){
       setTimeout(() => {
         this.isShow = true
-      }, 10000);
+      }, 1000);
     },
     hiddenBut() {
       if (document.documentElement.scrollTop + document.body.scrollTop > 500) {
@@ -106,42 +106,42 @@ export default {
 .dialog{
   
   position: fixed;
-  top: 25%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: url('/static/img/dig2.png');
+  background: url('/static/img/tanchuan.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 999;
 }
 .dialog_box{
     position: relative;
-    width: 514px;
-    height: 252px;
+    width: 362px;
+    height: 173px;
   }
   .dialog_hidden{
     position: absolute;
-    right: 20px;
-    top: 31px;
+    right: 0;
+    top: 3;
     opacity: 0;
   }
   .zixun{
-    width: 150px;
-    height: 45px;
+    width: 82px;
+    height: 27px;
     background: #000;
     position: absolute;
-    right: 58px;
-    bottom: 45px;
+    right: 6px;
+    bottom: 9px;
     opacity: 0;
   }
   .shiyong{
-    width: 150px;
-    height: 45px;
+    width: 82px;
+    height: 27px;
     background: #000;
     position: absolute;
-    right: 230px;
-    bottom: 45px;
+    right: 100px;
+    bottom: 9px;
     opacity: 0;
   }
 
@@ -149,23 +149,23 @@ export default {
 
 /* 悬浮框 开始 */
 .xuanfu{
-  width: 136px;
-  height: 403px;
+  width: 150px;
+  height: 50px;
   position: fixed;
-  right: 50px;
-  top: 25%;
+  right: 0;
+  top: 45%;
   z-index: 9;
-  background: url('/static/img/dig.png');
+  background: url('/static/img/xufukuang.png');
   background-repeat: repeat-x;
   
 }
 .but{
-  padding-top: 287px;
+  /* padding-top: 287px; */
   }
 .but_qq{
   display: inline-block;
-  width: 110px;
-  height: 30px;
+  width: 150px;
+  height: 49px;
   opacity: 0;
 }
 /* 悬浮框结束 */
